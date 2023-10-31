@@ -5,13 +5,13 @@
  *
  * @parent: the parent node
  * @value: value of the inserted node
- * Return : the inserted node
-**/
+ * Return: the inserted node
+ */
 
 binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 {
 	if (parent == NULL)
-		return NULL;
+		return (NULL);
 
 	binary_tree_t *new_node = binary_tree_node(parent, value);
 
@@ -27,7 +27,7 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 	}
 
 	new_node->parent = parent;
-	parent-> right = new_node;
+	parent->right = new_node;
 
 	return (new_node);
 }
